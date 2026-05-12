@@ -12,8 +12,10 @@ boton.addEventListener("click", () => {
   let reg;
   let km;
   let precio;
+  let social;
   reg = registrada.value;
   km = distancia.value;
+  social = tarifasocial.value
 
   if (reg === "si"){
     if (km <=3){
