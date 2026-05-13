@@ -115,7 +115,7 @@ if (lug === "Provincia de Buenos Aires"){
       precio = 653.78
     }
     else if (km > 27){
-      precio = 76863	
+      precio = 768.63	
     }}
   }
   tarifa.innerText = precio;
