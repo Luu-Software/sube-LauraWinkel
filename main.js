@@ -12,11 +12,14 @@ boton.addEventListener("click", () => {
   let reg;
   let km;
   let precio;
-  let social;
+  let lug;
+
+  
   reg = registrada.value;
   km = distancia.value;
-  social = tarifasocial.value
+  lug = lugar.value
 
+  if (lug === "CABA"){
   if (reg === "si"){
     if (km <=3){
       precio = 715.24
@@ -30,7 +33,7 @@ boton.addEventListener("click", () => {
     else if (km <= 27){
       precio = 917.24
     }
-
+  }
   if (reg === "no"){
     if (km <= 3){
       precio = 1137.23
@@ -45,6 +48,75 @@ boton.addEventListener("click", () => {
       precio = 1458.41
     }
   }
+  if (reg === "tarifa social"){
+    if (km <= 3){
+      precio = 339.18
+    }
+    else if (km <= 6){
+      precio = 376.88
+    }
+    else if (km <= 12){
+      precio = 405.91
+    }
+    else if (km <= 27){
+      precio = 434.97
+    }
+  }
+}
+
+
+if (lug === "Provincia de Buenos Aires"){
+  if (reg === "si"){
+    if (km <=3){
+      precio = 968.57
+    }  
+    else if (km <= 6){
+      precio = 1089.64
+    }
+    else if (km <= 12){
+      precio = 1210.71
+    }
+    else if (km <= 27){
+      precio = 1452.85
+    }
+    else if (km > 27){
+      precio = 1708.07	
+    }
+
+  }
+  if (reg === "no"){
+    if (km <= 3){
+      precio =  1937.14
+    }
+    else if (km <= 6){
+      precio =  2179.28
+    }
+    else if (km <= 12){
+      precio = 2421.42
+    }
+    else if (km <= 27){
+      precio = 2905.70
+    }
+    else if (km > 27){
+      precio = 3416.14	
+    }
+  }
+  if (reg === "tarifa social"){
+    if (km <= 3){
+      precio =  435.85
+    }
+    else if (km <= 6){
+      precio = 490.33
+    }
+    else if (km <= 12){
+      precio = 544.81
+    }
+    else if (km <= 27){
+      precio = 653.78
+    }
+    else if (km > 27){
+      precio = 76863	
+    }}
   }
   tarifa.innerText = precio;
 });
