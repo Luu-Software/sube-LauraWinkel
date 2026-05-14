@@ -118,5 +118,58 @@ if (lug === "Provincia de Buenos Aires"){
       precio = 768.63	
     }}
   }
+  if (lug === "Nacionales"){
+    if (reg === "si"){
+      if (km <=3){
+        precio = 700.00
+      }  
+      else if (km <= 6){
+        precio = 779.78
+      }
+      else if (km <= 12){
+        precio = 839.86
+      }
+      else if (km <= 27){
+        precio = 899.99
+      }
+      else if (km > 27){
+        precio = 959.71	
+      }
+  
+    }
+    if (reg === "no"){
+      if (km <= 3){
+        precio =  1113.00
+      }
+      else if (km <= 6){
+        precio =  1239.85
+      }
+      else if (km <= 12){
+        precio = 1335.38
+      }
+      else if (km <= 27){
+        precio = 1430.98
+      }
+      else if (km > 27){
+        precio =  1525.94	
+      }
+    }
+    if (reg === "tarifa social"){
+      if (km <= 3){
+        precio =  315.00
+      }
+      else if (km <= 6){
+        precio = 350.90
+      }
+      else if (km <= 12){
+        precio = 377.93
+      }
+      else if (km <= 27){
+        precio = 404.99
+      }
+      else if (km > 27){
+        precio = 431.86	
+      }}
+    }
   tarifa.innerText = precio;
 });
